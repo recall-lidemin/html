@@ -1,0 +1,845 @@
+body {
+    background-color: #ededed;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: 112px;
+
+    // logo
+    .logo {
+        height: 112px;
+        padding-left: 0;
+        position: relative;
+
+        a {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 200px;
+            height: 50px;
+            font-size: 0;
+            background: url(../upload/logo.png) no-repeat center;
+        }
+    }
+
+    // 搜索栏
+    .search {
+        position: relative;
+        height: 112px;
+        padding: 0;
+
+        .search_txt {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            width: 100%;
+            height: 38px;
+            background-color: #fff;
+            outline: none;
+            vertical-align: middle;
+            border: 0;
+        }
+
+        .search_btn {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 107px;
+            height: 38px;
+            background-color: #2d3e50;
+            color: #fff;
+            font-size: 16px;
+            outline: none;
+            border: 0;
+
+        }
+
+        .shortcut_nav {
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+
+            li {
+                list-style: none;
+                float: left;
+                margin-right: 14px;
+            }
+
+            li:first-child a {
+                color: #ff0000;
+            }
+
+            li:nth-child(3) a {
+                color: #4e804e;
+            }
+
+            li:last-child a {
+                color: #ff0000;
+            }
+
+
+        }
+    }
+
+    // 收藏
+    .collection {
+        height: 112px;
+        // padding-left: 188px;
+        text-align: right;
+        position: relative;
+
+        a {
+            display: inline-block;
+            margin-right: 15px;
+            margin-top: 45px;
+            font-size: 16px;
+            color: #2f4151;
+
+            i {
+                padding-left: 5px;
+                font-size: 12px;
+                color: #2f4151;
+            }
+        }
+
+        a:nth-child(2) {
+            margin-right: 0;
+        }
+
+        .box {
+
+            width: 200px;
+            height: 90px;
+            background-color: #fff;
+            position: absolute;
+            top: 80px;
+            left: 180px;
+            border-radius: 5px;
+            display: none;
+            text-align: center;
+            padding: 10px;
+
+            i {
+                position: absolute;
+                top: -9px;
+                left: 40px;
+                color: #fff;
+            }
+        }
+
+        .box_ {
+
+            width: 200px;
+            height: 90px;
+            background-color: #fff;
+            position: absolute;
+            top: 80px;
+            left: 180px;
+            border-radius: 5px;
+            display: none;
+            text-align: center;
+            padding: 10px;
+
+            i {
+                position: absolute;
+                top: -9px;
+                left: 120px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// 导航条
+.nav {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    background-color: #2f4151;
+
+    // 左侧大导航
+    .nav_left {
+        .on {
+            background-color: #6ccdee;
+        }
+
+        li {
+            float: left;
+            padding: 0 30px;
+            cursor: pointer;
+
+            a {
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+    }
+
+    // 右侧小导航
+    .nav_right {
+        li {
+            float: left;
+            padding: 0 10px;
+
+            a {
+                font-size: 12px;
+                color: #ced9e6;
+            }
+        }
+    }
+}
+
+// banner
+.content {
+    margin-top: 10px;
+
+    //蓝色底线
+    .bar {
+        width: 100%;
+        margin-top: 16px;
+        height: 1px;
+        background-color: #6ccdee;
+    }
+
+    .content_left {
+        padding: 0;
+
+        //轮播
+        .banner_left {
+
+            .swiper-container {
+                height: 410px;
+
+                .swiper-pagination {
+                    text-align: right;
+                    padding-right: 50px;
+                }
+
+                .swiper-pagination-bullet {
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                    line-height: 20px;
+                    font-size: 12px;
+                    color: #fff;
+                    opacity: 1;
+                    background: rgba(0, 0, 0, 0.3);
+                }
+
+                .swiper-pagination-bullet-active {
+                    color: #fff;
+                    background: #007aff;
+                }
+
+                .swiper-slide {
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .swiper-button-next:after,
+                .swiper-button-prev:after {
+                    font-size: 30px;
+                }
+
+                .bg {
+
+                    height: 50px;
+                    border-radius: 25px;
+                    background-color: rgba(0, 0, 0, .3);
+                }
+
+                .mask {
+                    padding-left: 20px;
+                    margin: 0;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    background-color: rgba(0, 0, 0, .5);
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+
+            .img_big {
+                height: 410px;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+        }
+
+        //今日热点
+        .hot_today {
+            margin-top: 42px;
+
+            // 标题
+            .title {
+                width: 100%;
+                height: 33px;
+                overflow: hidden;
+                position: relative;
+
+                h2 {
+                    position: absolute;
+                    width: 140px;
+                    background-color: #ededed;
+                    font-size: 30px;
+                    font-weight: 400;
+                    color: #2d3e50;
+                }
+            }
+
+            // 内容
+            .hot_content {
+                margin-top: 10px;
+
+                ul {
+                    li:first-child {
+                        width: 380px;
+                        height: 200px;
+
+                        .swiper-container {
+                            width: 100%;
+                            height: 100%;
+
+                            .swiper-pagination {
+                                bottom: 5px;
+                                text-align: right;
+                                padding-right: 5px;
+                            }
+
+                            .swiper-pagination-bullet {
+                                width: 16px;
+                                height: 16px;
+                                text-align: center;
+                                line-height: 16px;
+                                font-size: 12px;
+                                color: #fff;
+                                opacity: 1;
+                                background: rgba(0, 0, 0, 0.3);
+                            }
+
+                            .swiper-pagination-bullet-active {
+                                color: #fff;
+                                background: #007aff;
+                            }
+
+                            .swiper-slide {
+                                background-position: center;
+                                background-size: cover;
+                            }
+
+                            .swiper-button-next:after,
+                            .swiper-button-prev:after {
+                                font-size: 16px;
+                            }
+
+                            .bg {
+                                height: 30px;
+                                border-radius: 15px;
+                                background-color: rgba(0, 0, 0, .3);
+                            }
+
+                            .mask {
+                                padding-left: 5px;
+                                margin: 0;
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                height: 30px;
+                                line-height: 30px;
+                                background-color: rgba(0, 0, 0, .5);
+                                color: #fff;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    li {
+                        float: left;
+                        margin-right: 10px;
+                        margin-top: 10px;
+                        width: 185px;
+                        height: 95px;
+                        background-color: pink;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+
+                    }
+                }
+            }
+
+        }
+
+        // 电视剧
+        .tv {
+            margin-top: 44px;
+
+            .title {
+                width: 100%;
+                height: 33px;
+                line-height: 33px;
+                overflow: hidden;
+                position: relative;
+
+                h2 {
+                    position: absolute;
+                    width: 100px;
+                    background-color: #ededed;
+                    font-size: 30px;
+                    font-weight: 400;
+                    color: #2d3e50;
+                }
+
+                ul {
+                    position: absolute;
+                    right: 50px;
+                    background-color: #ededed;
+
+                    li {
+                        float: left;
+                        padding: 0 10px;
+
+                        a:hover {
+                            color: #6ccdee;
+                        }
+
+                    }
+
+                    li:first-child {
+                        background-color: #6ccdee;
+                        border-radius: 5px;
+
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .more {
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 38px;
+                    height: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    border-radius: 10px;
+                    background-color: #6bcded;
+                    color: #fff;
+                }
+            }
+
+            .tv_content {
+                margin-top: 20px;
+
+
+                ul {
+                    display: flex;
+                    height: 426px;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-content: space-between;
+
+                    li {
+                        width: 180px;
+                        height: 132px;
+                        background-color: #fff;
+
+                        a:nth-child(1) {
+                            display: block;
+                            height: 100px;
+                            position: relative;
+
+                            .play {
+                                width: 180px;
+                                height: 100px;
+                                position: absolute;
+                                top: 0;
+                                display: none;
+                                background: rgba(0, 0, 0, .5) url(../upload/play-ico.png) no-repeat center;
+                                background-size: 44px 44px;
+                            }
+                        }
+
+                        a:nth-child(1):hover .play {
+                            display: block;
+                        }
+
+                        a:nth-child(2) {
+                            display: block;
+                            height: 32px;
+                            line-height: 32px;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+        // 电影
+        .movie {
+            .movie_content {
+                margin-top: 20px;
+
+                ul {
+                    display: flex;
+                    height: 458px;
+                    justify-content: space-between;
+                    align-content: space-between;
+                    flex-wrap: wrap;
+
+                    li {
+                        width: 180px;
+                        background-color: #fff;
+
+                        a:nth-child(1) {
+                            display: block;
+                            position: relative;
+
+                            .play {
+                                width: 180px;
+                                height: 100%;
+                                position: absolute;
+                                top: 0;
+                                display: none;
+                                background: rgba(0, 0, 0, .5) url(../upload/play-ico.png) no-repeat center;
+                                background-size: 44px 44px;
+                            }
+
+                            .vip_ico {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 64px;
+                                height: 64px;
+                                background: url(../upload/vip-ico.png) no-repeat center;
+                            }
+                        }
+
+                        a:nth-child(1):hover .play {
+                            display: block;
+                        }
+
+                        a:nth-child(2) {
+                            display: block;
+                            padding-left: 10px;
+                            margin: 5px 0;
+                            font-size: 16px;
+                        }
+
+                        span {
+                            padding-left: 10px;
+                            font-size: 12px;
+                        }
+                    }
+
+                    // li:nth-child(n+5){
+                    //     width: 180px;
+                    //     height: ;
+                    // }
+                }
+            }
+        }
+
+        // 动漫
+        .comic {
+            .tv_content {
+                ul {
+                    height: 284px;
+                }
+            }
+        }
+    }
+
+    .content_right {
+        padding: 0;
+
+        .mask {
+            // height: 2000px;
+            margin-left: 20px;
+            padding: 0 15px;
+            background-color: #fff;
+
+            //tab导航
+            .banner_right {
+                .title {
+                    height: 35px;
+
+                    li {
+                        float: left;
+
+                        a {
+                            display: block;
+                            height: 35px;
+                            line-height: 35px;
+                            padding: 0 15px;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .act {
+                        background-color: #6ccdee;
+                    }
+                }
+
+                .list {
+                    margin-top: 20px;
+                    height: 365px;
+
+                    .item {
+                        display: none;
+
+                        ul {
+                            li {
+                                margin: 10px 0;
+                                font-size: 16px;
+                                color: #7d7d7d;
+
+                                a {
+                                    margin: 0 10px;
+                                    color: #7d7d7d;
+                                }
+
+                                a:hover {
+                                    color: #6ccdee;
+                                }
+
+                                span:nth-child(3) {
+                                    float: right;
+                                }
+
+                                span:nth-child(3):hover {
+                                    color: #6ccdee;
+                                }
+                            }
+
+                            .color {
+                                color: #6ccdee;
+                            }
+                        }
+                    }
+
+                    .act {
+                        display: block;
+                    }
+                }
+            }
+
+
+            // 热门视频
+            .hot_video {
+                margin-top: 42px;
+
+                .title {
+                    height: 33px;
+                    overflow: hidden;
+                    position: relative;
+
+                    h4 {
+                        position: absolute;
+                        top: 5px;
+                        width: 100px;
+                        background-color: #fff;
+                        font-size: 21px;
+                        font-weight: 400;
+                        color: #2d3e50;
+                    }
+                }
+
+                .hot_video_content {
+                    margin-top: 20px;
+                    padding: 0 15px;
+
+                    a {
+                        display: block;
+                        position: relative;
+
+                        img {
+                            height: 165px;
+                        }
+
+                        .mask {
+                            padding-left: 20px;
+                            margin: 0;
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            height: 20px;
+                            line-height: 20px;
+                            background-color: rgba(0, 0, 0, .5);
+                            color: #fff;
+                        }
+                    }
+
+                    ul {
+                        margin-top: 16px;
+
+                        li {
+                            margin: 10px 0;
+
+                            i {
+                                margin: 0 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 电视剧分类
+            .tv_classify {
+                margin-top: 42px;
+
+                .title {
+                    width: 100%;
+                    height: 33px;
+                    line-height: 33px;
+                    overflow: hidden;
+                    position: relative;
+
+                    h2 {
+                        position: absolute;
+                        width: 120px;
+                        margin-top: 5px;
+                        background-color: #fff;
+                        font-size: 21px;
+                        font-weight: 400;
+                        color: #2d3e50;
+                    }
+
+                    .more {
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 38px;
+                        height: 20px;
+                        line-height: 20px;
+                        text-align: center;
+                        border-radius: 10px;
+                        background-color: #6bcded;
+                        color: #fff;
+                    }
+                }
+
+                .tv_classify_content {
+                    margin-top: 20px;
+                    height: 426px;
+
+                    h4 {
+                        margin: 5px 0;
+                    }
+
+                    ul {
+                        li {
+                            padding: 5px 15px;
+                            float: left;
+                        }
+                    }
+
+                    .line {
+                        width: 100%;
+                        height: 1px;
+                        background-color: #CCC;
+                        margin: 10px 0;
+                    }
+                }
+            }
+
+            // 电影分类
+            .movie_classify {
+                margin-top: 42px;
+
+                .movie_classify_content {
+                    margin-top: 20px;
+                    height: 458px;
+
+                    h4 {
+                        margin: 5px 0;
+                    }
+
+                    ul {
+                        li {
+                            padding: 5px 15px;
+                            float: left;
+                        }
+                    }
+
+                    .line {
+                        width: 100%;
+                        height: 1px;
+                        background-color: #CCC;
+                        margin: 10px 0;
+                    }
+                }
+            }
+
+            // 动漫分类
+            .comic_classify {
+                margin-top: 42px;
+
+                .title {
+                    margin-top: 45px;
+                }
+
+                .comic_classify_content {
+                    margin-top: 20px;
+                    height: 286px;
+
+                    h4 {
+                        margin: 5px 0;
+                    }
+
+                    ul {
+                        li {
+                            padding: 5px 15px;
+                            float: left;
+                        }
+                    }
+
+                    .line {
+                        width: 100%;
+                        height: 1px;
+                        background-color: #CCC;
+                        margin: 10px 0;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// footer
+.footer {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
