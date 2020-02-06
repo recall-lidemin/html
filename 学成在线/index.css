@@ -1,0 +1,591 @@
+/* 把我们所有标签的内外边距清零 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal
+}
+
+/* 去掉li 的小圆点 */
+li {
+    list-style: none
+}
+
+img {
+    /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle
+}
+
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+
+button,
+input {
+    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #f3f6f8;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+.hide,
+.none {
+    display: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header部分start */
+.header {
+    width: 1200px;
+    height: 42px;
+    line-height: 42px;
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 195px;
+    height: 42px;
+}
+
+nav {
+    float: left;
+    height: 42px;
+    margin-left: 50px;
+}
+
+nav ul li {
+    float: left;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    font-size: 18px;
+    color: #050505;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    float: left;
+    height: 42px;
+    margin-left: 70px;
+}
+
+.search input[type=search] {
+    float: left;
+    width: 360px;
+    height: 42px;
+    outline: none;
+    border: 1px solid #00a4ff;
+    border-right: none;
+}
+
+.btn {
+    float: left;
+    text-align: center;
+    width: 50px;
+    height: 42px;
+    border: 1px solid #00a4ff;
+    background-color: #00a4ff;
+    border-left: none;
+    transition: all .5s ease;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+
+.user {
+    float: right;
+    margin-right: 30px;
+}
+
+/* header部分end */
+
+/* container内容部分start */
+.container {
+    position: relative;
+}
+
+/* 侧边栏导航start */
+.left_aside {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -755px;
+    width: 150px;
+    background-color: #fff;
+}
+
+.left_aside ul li {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+.left_aside ul li a {
+    font-size: 14px;
+    color: #000;
+}
+
+.left_aside ul li a:hover {
+    color: #00a4ff;
+}
+
+/* 侧边栏导航end */
+
+/* 广告导航部分start */
+.section {
+    height: 420px;
+    background-color: #1b046b;
+}
+
+.banner {
+    height: 420px;
+    background: url(images/banner2.png) no-repeat;
+}
+
+.top_aside {
+    float: left;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.top_aside ul {
+    margin-top: 10px;
+}
+
+.top_aside ul li {
+    padding: 12px 0;
+    padding-left: 20px;
+}
+
+.top_aside ul li a {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+.top_aside ul li a::after {
+    content: '>';
+    position: absolute;
+    top: -1px;
+    right: 20px;
+}
+
+.top_aside ul li a:hover {
+    color: #fff;
+}
+
+.course {
+    float: right;
+    width: 228px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.course h3 {
+    width: 228px;
+    height: 48px;
+    background-color: #00a4ff;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.course ul li {
+    padding: 10px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #efefef;
+}
+
+.course ul li:last-child {
+    border-bottom: none;
+}
+
+.course ul li a {
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.course ul li a::before {
+    content: '继续学习';
+    font-size: 16px;
+}
+
+.course ul li a::after {
+    content: '正在学习-使用对象';
+    display: block;
+    font-size: 12px;
+    /* color: #a5a5a5; */
+}
+
+.course ul li a:hover {
+    color: #00a4ff;
+}
+
+.course>a {
+    display: block;
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+/* 广告导航部分end */
+/* 精品推荐部分start */
+/* 精品推荐header部分start */
+.course_header {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 10px;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, .3);
+    background-color: #fff;
+}
+
+.course_header h3 {
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.course_header ul {
+    float: left;
+    margin-left: 35px;
+}
+
+.course_header ul li {
+    float: left;
+    padding-right: 35px;
+}
+
+.course_header ul li::before {
+    content: '|';
+    padding-right: 35px;
+    color: #4e4e4e;
+    font-size: 16px;
+}
+
+.course_header ul li a {
+    font-size: 16px;
+    color: #050505;
+}
+
+.course_header>a {
+    float: right;
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.course_header>a:hover {
+    color: #00a4ff;
+}
+
+/* 精品推荐header部分end */
+/* 精品推荐container部分start */
+.course_container {
+    margin-top: 30px;
+}
+
+.course_container_header h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.course_container_header a {
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.course_nr {
+    margin-top: 10px;
+}
+
+.course_nr ul {
+    width: 1215px;
+}
+
+.course_nr ul li {
+    float: left;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.course_nr ul li a {
+    display: block;
+    position: relative;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    transition: ease .5s;
+}
+
+.hot {
+    position: absolute;
+    top: 4px;
+    right: -4px;
+}
+
+.course_nr ul li a p {
+    margin-top: 25px;
+    padding: 0 25px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #050505;
+}
+
+.course_nr ul li a span {
+    display: block;
+    margin-left: 25px;
+    padding-top: 10px;
+}
+
+.course_nr ul li a span::before {
+    content: '高级';
+    font-size: 12px;
+    color: #ff7c2d;
+}
+
+.course_nr ul li a:hover {
+    box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, .3);
+}
+
+/* 精品推荐container部分end */
+/* 精品推荐部分end */
+/* 课程详情部分start */
+.course_xq {
+    margin-top: 30px;
+}
+
+/* 公共header  start */
+.common_header {
+    margin-top: 40px;
+
+}
+
+.common_header h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.common_header ul {
+    float: left;
+    margin-left: 315px;
+}
+
+.common_header ul li {
+    float: left;
+    padding: 0 25px;
+}
+
+.common_header ul li a {
+    padding: 0 10px;
+    font-size: 16px;
+    color: #868686;
+}
+
+.common_header ul li a:hover {
+    color: #00a4ff;
+}
+
+.common_header>a {
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+/* 公共header  end */
+/* 公共内容common_container部分start */
+.common_container {
+    margin-top: 15px;
+    width: 1215px;
+}
+
+.common_container_1 {
+    /* margin-top: 15px; */
+    width: 1215px;
+}
+
+.left {
+    float: left;
+    width: 228px;
+    height: 385px;
+    background: url(images/php_1.png) no-repeat;
+}
+
+.right {
+    float: left;
+    margin-left: 15px;
+}
+
+.top {
+    width: 957px;
+    height: 100px;
+    background: url(images/top.png) no-repeat;
+}
+
+.course_common ul li {
+    float: left;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.course_common ul li a {
+    display: block;
+    position: relative;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    /* transition: 要变化属性 花费时间（必写 ） 变化曲线  */
+    transition: all .5s ease;
+}
+
+.hot {
+    position: absolute;
+    top: 4px;
+    right: -4px;
+}
+
+.course_common ul li a p {
+    margin-top: 25px;
+    padding: 0 25px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #050505;
+}
+
+.course_common ul li a span {
+    display: block;
+    margin-left: 25px;
+    padding-top: 10px;
+}
+
+.course_common ul li a span::before {
+    content: '高级';
+    font-size: 12px;
+    color: #ff7c2d;
+}
+
+.course_common ul li a:hover {
+    box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, .3);
+}
+
+/* 公共内容部分end */
+/* 课程详情部分end */
+/* container部分end */
+/* footer部分start */
+footer {
+    height: 418px;
+    margin-top: 40px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.footer_section {
+    margin-top: 32px;
+}
+
+.section_left {
+    float: left;
+}
+
+.section_left p {
+    line-height: 20px;
+    margin-top: 25px;
+}
+
+.section_left a {
+    display: block;
+    width: 118px;
+    height: 30px;
+    margin-top: 20px;
+    line-height: 30px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    font-size: 16px;
+    color: #00a4ff;
+
+}
+
+.section_right {
+    float: right;
+}
+
+.section_right dl {
+    float: left;
+    line-height: 22px;
+    margin-right: 30px;
+    margin-left: 90px;
+}
+
+.section_right dl dt {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.section_right dl dd {
+    font-size: 12px;
+    color: #333;
+}
+
+/* footer部分end */

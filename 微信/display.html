@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="less/display.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <div class="main_body">
+        <header class="header"></header>
+        <section class="middle">
+            <div class="yuan"></div>
+            <div class="left fl">
+                <div class="item">2020将迎来...</div>
+
+            </div>
+            <div class="right fr">
+                <div class="item">2019将告别...</div>
+
+            </div>
+        </section>
+    </div>
+</body>
+<script src="js/flexible.js"></script>
+<script>
+    var left = document.querySelector(".left");
+    var right = document.querySelector(".right");
+
+    var new_list = ["工作顺利", "事业成功", "人生巅峰", "家庭和睦", "钱", "天天快乐", "有趣的自己",
+        "健康的自己", "开心的自己", "进步的自己", "帅气的自己", "美好的"
+    ];
+    var old_list = ["熬不完的夜", "坏事", "不如意", "无意义社交", "无趣生活", "无尽压力", "不值得", "惋惜",
+        "忍不住买买", "玩不玩的游戏", "放不下的执念", "脱发的烦恼"
+    ];
+
+    var count = 0;
+    for (let i = 0; i < 6; i++) {
+        count++;
+        var index = Math.floor(Math.random() * 8);
+        var div = document.createElement("div");
+        div.innerHTML = `${new_list[index]}`;
+        div.className = "newitem";
+        if (count % 2 == 0) {
+            div.style.backgroundColor = "#fada5f";
+        } else {
+            div.style.backgroundColor = "#fae89e";
+        }
+        left.appendChild(div);
+    }
+
+    for (let i = 0; i < 6; i++) {
+        count++;
+        var index = Math.floor(Math.random() * 8);
+        var div = document.createElement("div");
+        div.innerHTML = `${old_list[index]}`;
+        div.className = "olditem";
+        if (count % 2 == 0) {
+            div.style.backgroundColor = "#8def9c";
+        } else {
+            div.style.backgroundColor = "#baf4c1";
+        }
+        right.appendChild(div);
+    }
+</script>
+
+</html>

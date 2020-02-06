@@ -1,0 +1,318 @@
+.header {
+    height: 40px;
+    line-height: 40px;
+    background-color: #055c92;
+    color: #fff;
+    font-size: 12px;
+}
+
+.header a {
+    color: #fff;
+}
+
+.nav {
+    height: 114px;
+    line-height: 114px;
+}
+
+.logo {
+    margin-top: 31px;
+}
+
+.logo a {
+    display: block;
+    width: 166px;
+    height: 53px;
+    background: url(../images/logo.png) no-repeat;
+    font-size: 0;
+}
+
+.nav_content {
+    margin-left: 51px;
+}
+
+.nav_content li {
+    float: left;
+    padding: 0 11px;
+    font-size: 16px;
+}
+
+.nav_content li a {
+    color: #333;
+}
+
+.banner {
+    height: 400px;
+}
+
+.aside {
+    height: 400px;
+    background-color: #53000e;
+}
+
+.aside ul {
+    margin-top: 20px;
+}
+
+.aside li {
+    width: 232px;
+    font-size: 14px;
+}
+
+.aside li a {
+    display: block;
+    position: relative;
+    /* width: 193px; */
+    height: 36px;
+    padding-left: 36px;
+    margin-left: 2px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.aside li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.aside li a::after {
+    font-family: 'icomoon';
+    content: '\e920';
+    position: absolute;
+    right: 36px;
+    font-size: 20px;
+}
+
+.b_promo {
+    width: 726px;
+    height: 400px;
+    background: url(../images/banner.jpg) no-repeat -236px;
+}
+
+.infor {
+    width: 230px;
+    height: 400px;
+    margin-left: 10px;
+    border: 1px solid #ededed;
+    font-size: 16px;
+}
+
+.infor h4 {
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #055c92;
+    color: #fff;
+}
+
+.infor .ul {
+    margin-top: 16px;
+}
+
+.infor li {
+    line-height: 36px;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.infor li a {
+    display: block;
+    width: 225px;
+    /* margin-left: 20px;
+    padding-left: 10px; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.infor li a::before {
+    font-family: 'icomoon';
+    content: "\ea44";
+}
+
+.stusource {
+    margin-top: 56px;
+}
+
+.stu_header {
+    height: 47px;
+    line-height: 47px;
+}
+
+.stu_header h2 {
+    float: left;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.stu_header ul {
+    float: right;
+}
+
+.stu_header ul li {
+    float: left;
+}
+
+.stu_header ul li:nth-child(even) {
+    margin: 0 5px;
+}
+
+.stucontent li {
+    float: left;
+    width: 230px;
+    height: 195px;
+    margin-right: 10px;
+    border: 1px solid #ededed;
+}
+
+.stucontent .pic {
+    position: relative;
+    width: 228px;
+    height: 120px;
+}
+
+.stucontent .pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.stucontent .pic p {
+    position: absolute;
+    bottom: 0;
+    width: 230px;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+}
+
+.stucontent li>a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px 0 10px 10px;
+}
+
+.stucontent li .p {
+    margin: 18px 10px 0;
+}
+
+.stucontent li .p a:nth-child(2) {
+    display: block;
+    width: 62px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #ed4300;
+    text-align: center;
+    color: #ed4300;
+}
+
+.stucontent li:hover {
+    border-color: red;
+    z-index: 1;
+}
+
+.shequ {
+    margin-top: 32px;
+}
+
+.shequ_content {
+    margin-top: 10px;
+}
+
+.shequ_content li {
+    float: left;
+    width: 288px;
+    height: 220px;
+    margin-right: 10px;
+    border: 1px solid #ededed;
+    text-align: center;
+}
+
+.shequ_content li>a {
+    display: block;
+    width: 286px;
+    height: 162px;
+}
+
+.shequ_content li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.shequ_content li p {
+    margin: 20px 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.shequ_content li:hover {
+    border-color: #4bb1e3;
+}
+
+.classify {
+    height: 115px;
+    line-height: 115px;
+    margin-top: 40px;
+    background-color: #f3f3f3;
+}
+
+.classify li {
+    float: left;
+
+}
+
+.classify li:nth-child(1) {
+    margin-left: 88px;
+}
+
+.classify li:nth-child(even) {
+    width: 1px;
+    height: 34px;
+    background-color: #ccc;
+    margin: 40px 84px 0 32px;
+}
+
+.about {
+    margin-top: 28px;
+}
+
+.about dl {
+    float: left;
+    margin-right: 115px;
+}
+
+.about dl dt {
+    margin-bottom: 12px;
+}
+
+.about dl dd {
+    line-height: 26px;
+}
+
+.hengxian {
+    width: 1200px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 64px auto 20px;
+}
+
+.links h4 {
+    margin-bottom: 10px;
+}
+
+.links a {
+    margin: 0 5px;
+}
+
+.footer_logo {
+    margin-right: 10px;
+}
+
+.fl p {
+    margin: 5px 0;
+}
+
+.address {
+    margin-bottom: 45px;
+}

@@ -1,0 +1,388 @@
+body {
+    background-color: #f7f7f7;
+}
+
+.header {
+    background-color: #fff;
+    height: 62px;
+    line-height: 62px;
+}
+
+.header a {
+    color: #333;
+}
+
+.logo a {
+    display: block;
+    width: 245px;
+    height: 38px;
+    margin-top: 12px;
+    background: url(../images/logo.png) no-repeat;
+    font-size: 0;
+}
+
+.nav {
+    margin-left: 19px;
+}
+
+.nav li {
+    float: left;
+    padding: 0 19px;
+}
+
+.nav li a:hover {
+    color: #2fae36;
+}
+
+.login li {
+    float: left;
+    padding: 0 10px;
+}
+
+.banner {
+    position: relative;
+    padding-top: 16px;
+}
+
+.banner .left {
+
+    width: 926px;
+    height: 386px;
+}
+
+.banner .right {
+    margin-left: 22px;
+    width: 250px;
+    height: 386px;
+    border: 1px solid #ededed;
+    background-color: #fff;
+    border-top: 2px solid #2fae36;
+}
+
+.aside_logo {
+    position: absolute;
+    top: 0;
+    right: -42px;
+    width: 30px;
+    height: 145px;
+}
+
+.aside_logo .xian {
+    width: 2px;
+    height: 26px;
+    margin: 0 auto;
+    background-color: #2fae36;
+}
+
+.aside_logo p {
+    text-align: center;
+    background-color: #2fae36;
+    color: #fff;
+}
+
+.banner .right h4 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.banner .right li {
+    margin-left: 16px;
+    line-height: 37px;
+}
+
+.banner .right li a {
+    color: #333;
+    margin-left: 4px;
+}
+
+.banner .right li a:hover {
+    color: red;
+}
+
+.banner .right li:nth-child(1) a {
+    color: red;
+}
+
+.banner .right li:nth-child(4) a {
+    color: red;
+}
+
+.hot {
+    margin-top: 16px;
+}
+
+.hot .left {
+    width: 104px;
+    height: 168px;
+}
+
+.hot .right {
+    margin-left: 22px;
+}
+
+.hot .right a:nth-child(2) {
+    display: block;
+    margin: 15px 0 8px 15px;
+}
+
+.hot .right li {
+    float: left;
+    width: 252px;
+    height: 168px;
+    margin-right: 22px;
+    background-color: #fff;
+}
+
+.hot .right li:last-child {
+    margin-right: 0;
+}
+
+.price {
+    margin: 0 15px;
+    font-size: 12px;
+    color: #666;
+}
+
+.lesson {
+    margin-top: 45px;
+}
+
+.lesson h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: normal;
+}
+
+.lesson_nav {
+    margin: 20px 0;
+}
+
+.lesson_nav a {
+    display: block;
+    float: left;
+    padding: 0 5px;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.lesson_nav a:nth-child(1) {
+    border: 1px solid #2fae36;
+    color: #2fae36;
+}
+
+.lesson_nav a:hover {
+    border: 1px solid #2fae36;
+    color: #2fae36;
+}
+
+.l_content li {
+    position: relative;
+    float: left;
+    width: 285px;
+    height: 252px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.l_content li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.l_content li>a {
+    display: block;
+    width: 285px;
+    height: 160px;
+}
+
+.l_content li>a img {
+    width: 100%;
+    height: 100%;
+}
+
+.l_content li h4 {
+    margin: 12px 8px 8px 8px;
+}
+
+.l_content li p {
+    margin-left: 8px;
+    font-size: 12px;
+    color: #666;
+}
+
+.l_content .p {
+    height: 24px;
+    line-height: 24px;
+    padding: 0 8px;
+    font-size: 12px;
+    color: #666;
+}
+
+.dianbo {
+    position: absolute;
+    top: -3px;
+    right: 10px;
+    width: 38px;
+    height: 22px;
+    line-height: 22px;
+    background: url(../images/label.png) no-repeat;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.story {
+    margin-top: 44px;
+    font-size: 12px;
+}
+
+.story .top a {
+    display: block;
+    float: right;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.story .top a:hover {
+    background-color: #2fae36;
+    color: #fff;
+}
+
+.content li {
+    float: left;
+    width: 388px;
+    height: 164px;
+    margin-right: 18px;
+    background-color: #fff;
+}
+
+.content li:last-child {
+    margin-right: 0;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.content .pic {
+    float: left;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.content .pic p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.content .right {
+    width: 230px;
+}
+
+.content .right h4 {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #2fae36;
+}
+
+.content .right p {
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.footer {
+    height: 242px;
+    margin-top: 42px;
+    padding-top: 30px;
+    background-color: #fff;
+}
+
+.footer .left {
+    width: 424px;
+}
+
+.footer .left h4 {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.footer .left p {
+    font-size: 12px;
+    color: #666;
+}
+
+.footer .center {
+    margin-left: 58px;
+}
+
+.footer .center h4 {
+    margin-bottom: 18px;
+}
+
+.footer .center a:nth-child(2) {
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    background: url(../images/weibo.png) no-repeat;
+}
+
+.footer .center a:nth-child(3) {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    width: 32px;
+    height: 32px;
+    background: url(../images/weiixin.png) no-repeat;
+}
+
+.footer .right {
+    width: 440px;
+    margin-left: 114px;
+}
+
+.footer .right h4 {
+    margin-left: 12px;
+    margin-bottom: 14px;
+}
+
+.footer .right a {
+    margin: 0 12px;
+    font-size: 12px;
+    color: #666;
+}
+
+.xian {
+    height: 1px;
+    margin: 24px auto 20px;
+    background-color: #ccc;
+}
+
+.links {
+    text-align: center;
+}
+
+.links li a {
+    color: #333;
+}
+
+.links li {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.links li:nth-child(even) {
+    margin: 0 12px;
+}
+
+.copyright {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+}

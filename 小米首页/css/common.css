@@ -1,0 +1,396 @@
+/* 声明字体图标 这里一定要注意路径的变化 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 把我们所有标签的内外边距清零 */
+* {
+    margin: 0;
+    padding: 0
+}
+
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal
+}
+
+/* 去掉li 的小圆点 */
+li {
+    list-style: none
+}
+
+img {
+    /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle
+}
+
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+
+button,
+input {
+    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+.hide,
+.none {
+    display: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.w {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.shortcut {
+    height: 40px;
+    line-height: 40px;
+    background-color: #333333;
+}
+
+.shortcut ul li a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.shortcut ul li a:hover {
+    color: #ff6700;
+}
+
+.shortcut ul li {
+    float: left;
+
+}
+
+.shortcut ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #fff;
+    margin: 0 7px;
+    margin-top: 14px;
+}
+
+.header {
+    padding-top: 22px;
+}
+
+.header_left {
+    float: left;
+}
+
+.header_lfet .dd {
+    float: left;
+    height: 66px;
+    line-height: 66px;
+    text-align: center;
+}
+
+.header_lfet .dd:nth-child(1) {
+    width: 55px;
+    height: 55px;
+}
+
+.header_lfet .dd:nth-child(2) {
+    width: 163px;
+    background: url(../images/haidaoquannew.gif) no-repeat;
+}
+
+.header_right {
+    float: left;
+}
+
+.header_right ul li {
+    float: left;
+    height: 66px;
+    line-height: 66px;
+    padding: 0 12px;
+}
+
+.header_right ul li a {
+    font-size: 16px;
+    color: #333;
+}
+
+.container {
+    margin-top: 24px;
+}
+
+.container .left {
+    float: left;
+    width: 234px;
+    height: 460px;
+    background-color: #2c505f;
+}
+
+.container .left ul {
+    margin-top: 20px;
+}
+
+.container .left ul li {
+    position: relative;
+    padding: 10px 0;
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+.container .left ul li::after {
+    font-family: "icomoon";
+    content: '\e920';
+    position: absolute;
+    right: 24px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.container .left ul li a {
+    color: #fff;
+}
+
+.container .right {
+    float: left;
+    width: 991px;
+    height: 460px;
+    background: url(../images/banner.png) no-repeat;
+}
+
+.promo {
+    margin-top: 16px;
+    width: 1227px;
+}
+
+.promo .left {
+    float: left;
+    width: 234px;
+    height: 170px;
+}
+
+.promo img {
+    width: 100%;
+}
+
+.promo .right {
+    float: left;
+    /* width: 990px; */
+    height: 170px;
+    margin-left: 15px;
+}
+
+.promo .right .dd {
+    float: left;
+    width: 316px;
+    height: 170px;
+    margin-right: 15px;
+}
+
+.promo .right .dd:last-child {
+    margin-right: 0;
+}
+
+.list {
+    height: 798px;
+    margin-top: 68px;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.list_header {
+    margin-top: 75px;
+}
+
+.list_header .left {
+    float: left;
+    font-size: 20px;
+    color: #333;
+}
+
+.list_header .right {
+    float: right;
+    font-size: 14px;
+    color: #333;
+    margin-right: 30px;
+}
+
+.list_container .left {
+    float: left;
+    width: 234px;
+    height: 615px;
+}
+
+.list_container {
+    margin-top: 15px;
+    width: 1245px;
+}
+
+.list_container .right {
+    width: 996px;
+    float: left;
+    margin-left: 15px;
+}
+
+.list_container .right ul li {
+    float: left;
+    margin-right: 15px;
+}
+
+.list_container .right ul li:nth-child(5) {
+    margin-top: 15px;
+}
+
+.list_container .right ul li:nth-child(6) {
+    margin-top: 15px;
+}
+
+.list_container .right ul li:nth-child(7) {
+    margin-top: 15px;
+}
+
+.list_container .right ul li:nth-child(8) {
+    margin-top: 15px;
+}
+
+.list_container .right ul li a {
+    display: block;
+    position: relative;
+    width: 234px;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+}
+
+.youfei {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 65px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #ffac13;
+    color: #fff;
+}
+
+.list_container .right .pic {
+    width: 160px;
+    height: 160px;
+    margin-left: 37px;
+    margin-top: 20px;
+}
+
+.list_container .right .h4 {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.list_container .right .p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.list_container .right .price {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #ffac13;
+}
+
+.footer {
+    margin-top: 40px;
+    background-color: #fafafa;
+}
+
+.tr .left {
+    float: left;
+}
+
+.tr .left .td dt {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.tr {
+    margin-top: 54px;
+}
+
+.tr .td {
+    float: left;
+    padding: 0 50px;
+}
+
+.tr .right {
+    float: right;
+    margin-right: 30px;
+    text-align: center;
+    border-left: 1px solid #f1f1f1;
+}
+
+.links {
+    padding-top: 28px;
+}
+
+.links .left {
+    float: left;
+    margin-left: 50px;
+}
+
+.links .right {
+    float: left;
+    margin-left: 10px;
+}
+
+.links .right .top ul li {
+    float: left;
+}
+
+.div {
+    height: 19px;
+    margin: 30px auto;
+    text-align: center;
+}

@@ -1,0 +1,255 @@
+a {
+  text-decoration: none;
+}
+.header {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+  background-color: #222222;
+}
+.header .header_left a {
+  color: #fff;
+}
+.header .header_left .weather {
+  margin-left: 10px;
+}
+.header .header_left .weather span {
+  color: #fff;
+}
+.header .header_right a {
+  color: #fff;
+}
+.header .header_right .line {
+  width: 1px;
+  height: 34px;
+  margin: 0 10px;
+  background-color: #fff;
+}
+.main_body .aside {
+  width: 138px;
+}
+.main_body .aside .logo a {
+  display: block;
+  width: 108px;
+  height: 27px;
+  background: url(../upload/logo.png);
+  background-size: 108px 27px;
+  font-size: 0;
+}
+.main_body .aside .nav li {
+  font-size: 16px;
+  text-align: center;
+}
+.main_body .aside .nav li a {
+  display: block;
+  width: 108px;
+  height: 40px;
+  line-height: 40px;
+  color: #444444;
+  border-radius: 5px;
+}
+.main_body .aside .nav li a:hover {
+  background-color: #ed4040;
+  color: #fff;
+}
+.main_body .aside .nav li:nth-child(1) {
+  margin-bottom: 12px;
+  background-color: #ed4040;
+  width: 108px;
+  border-radius: 5px;
+}
+.main_body .aside .nav li:nth-child(1) a {
+  color: #fff;
+}
+.main_body .article_middle {
+  padding-top: 16px;
+}
+.main_body .article_middle .publish {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.main_body .article_middle .publish .publish_title {
+  border-bottom: 1px solid #ccc;
+}
+.main_body .article_middle .publish .publish_title a {
+  display: block;
+  float: left;
+  height: 43px;
+  line-height: 43px;
+  margin: 0 20px;
+  color: #444444;
+}
+.main_body .article_middle .publish .publish_title a:hover {
+  border-bottom: 2px solid #ed4040;
+}
+.main_body .article_middle .publish .publish_content {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 20px;
+  background-color: #f4f5f6;
+}
+.main_body .article_middle .publish .publish_content textarea {
+  width: 100%;
+  height: 70px;
+  background-color: #f4f5f6;
+  border: 0;
+  outline: 0;
+  resize: none;
+}
+.main_body .article_middle .publish .publish_content span {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 0 10px;
+  border-radius: 12px;
+  background-color: #797a7a;
+  color: #fff;
+}
+.main_body .article_middle .publish .publish_bt {
+  height: 39px;
+  line-height: 39px;
+}
+.main_body .article_middle .publish .publish_bt .left a {
+  color: #777777;
+}
+.main_body .article_middle .publish .publish_bt .left img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.main_body .article_middle .publish .publish_bt .left .pic {
+  margin-left: 22px;
+}
+.main_body .article_middle .publish .publish_bt .left .emoji {
+  margin-left: 36px;
+}
+.main_body .article_middle .publish .publish_bt .fr button {
+  width: 120px;
+  height: 39px;
+  border-radius: 0;
+}
+.main_body .article_middle .news .items_top {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.main_body .article_middle .news .items_top a {
+  color: #777777;
+}
+.main_body .article_middle .news .items_top a:nth-child(2) {
+  border: 1px solid #87a5b5;
+  color: #87a5b5;
+}
+.main_body .article_middle .news .items_top h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.main_body .article_middle .news .items_top span {
+  color: #777777;
+}
+.main_body .article_middle .news .items_top em {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 31px;
+  line-height: 31px;
+  background-color: #df2528;
+  color: #fff;
+  text-align: center;
+}
+.main_body .article_middle .news .items {
+  padding: 11px 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+.main_body .article_middle .news .items .left {
+  flex: 1;
+}
+.main_body .article_middle .news .items .left img {
+  width: 158px;
+  height: 100px;
+}
+.main_body .article_middle .news .items .right {
+  flex: 3;
+  margin-left: 15px;
+}
+.main_body .article_middle .news .items .right a {
+  color: #777777;
+}
+.main_body .article_middle .news .items .right a:nth-child(2) {
+  border: 1px solid #87a5b5;
+  color: #87a5b5;
+}
+.main_body .article_middle .news .items .right h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 弹性伸缩盒子模型显示 */
+  display: -webkit-box;
+  /* 限制在一个块元素显示的文本的行数 */
+  -webkit-line-clamp: 2;
+  /* 设置或检索伸缩盒对象的子元素的排列方式 */
+  -webkit-box-orient: vertical;
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+}
+.main_body .article_middle .news .items .right span {
+  color: #777777;
+}
+.main_body .article_right {
+  padding-top: 16px;
+}
+.main_body .article_right .top_search {
+  position: relative;
+}
+.main_body .article_right .top_search input {
+  width: 260px;
+  height: 44px;
+  outline: none;
+  background-color: #f5f6f7;
+}
+.main_body .article_right .top_search .btn {
+  position: absolute;
+  top: 0;
+  right: -78px;
+  width: 78px;
+  height: 44px;
+  background-color: #208eda;
+  color: #fff;
+}
+.main_body .article_right .login {
+  width: 340px;
+  height: 236px;
+  margin-top: 16px;
+  background-color: #f4f5f6;
+  padding: 21px;
+}
+.main_body .article_right .login .login_content {
+  width: 100%;
+  height: 100%;
+  padding: 24px 29px 0;
+  text-align: center;
+}
+.main_body .article_right .login .login_content p {
+  font-size: 12px;
+  line-height: 1;
+}
+.main_body .article_right .login .login_content button {
+  width: 240px;
+  height: 40px;
+}
+.main_body .article_right .login .login_content .login_way {
+  margin-top: 13px;
+}
+.main_body .article_right .login .login_content .login_way a {
+  color: #777777;
+}
+.main_body .article_right .login .login_content .login_way .qq {
+  margin-left: 70px;
+  margin-right: 28px;
+}

@@ -1,0 +1,493 @@
+/* 声明字体图标 这里一定要注意路径的变化 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 小圆点 */
+.yuan {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    background-color: #333;
+
+}
+
+.style_red {
+    color: #c81623;
+}
+
+.style_bg_green {
+    background-color: #5fb300;
+}
+
+.style_bg_red {
+    background-color: #c81623;
+}
+
+.style_bg_blue {
+    background-color: #0587f6;
+}
+
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.pro {
+    display: block;
+    position: relative;
+    height: 300px;
+    background: url(../upload/pro.jpg) no-repeat;
+}
+
+.pro .close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    background: url(../upload/ic_close.png) no-repeat;
+}
+
+
+.shortcut span {
+    font-size: 12px;
+    color: #666;
+}
+
+.shortcut li {
+    float: left;
+}
+
+.fr>ul>li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    margin-top: 10px;
+    margin: 9px 15px 0;
+    background-color: #666;
+}
+
+.fr ul li a {
+    font-size: 12px;
+    color: #666;
+}
+
+.fr ul li:nth-child(3) {
+    position: relative;
+}
+
+.fr ul li:nth-child(11) {
+    position: relative;
+}
+
+.fr ul li:nth-child(3) .ul {
+    position: absolute;
+    display: none;
+    width: 80px;
+    background-color: #ccc;
+    color: #333;
+    z-index: 1;
+    text-align: center;
+}
+
+.fr ul li:nth-child(11) .ul {
+    position: absolute;
+    display: none;
+    width: 80px;
+    background-color: #ccc;
+    color: #333;
+    z-index: 1;
+    text-align: center;
+}
+
+.item {
+    border-bottom: 1px solid #fff;
+}
+
+.fr ul li:nth-child(9) {
+    position: relative;
+}
+
+.fr ul li:nth-child(9) .erweima {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    position: absolute;
+    display: none;
+    background-color: #ccc;
+    color: #333;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.icons::after {
+    font-family: 'icomoon';
+    content: '\e91e';
+    margin-left: 5px;
+}
+
+.header {
+    position: relative;
+    height: 105px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 171px;
+    height: 61px;
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../images/logo.png) no-repeat;
+    font-size: 0;
+}
+
+.search {
+    position: absolute;
+    top: 25px;
+    left: 347px;
+    width: 540px;
+    height: 36px;
+    border: 2px solid #b11a1a;
+}
+
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    float: left;
+    width: 82px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #b11a1a;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.bar {
+    position: absolute;
+    top: 69px;
+    left: 347px;
+}
+
+.bar ul li {
+    float: left;
+    padding: 0 13px;
+}
+
+.bar ul li a {
+    font-size: 12px;
+    color: #666;
+}
+
+.bar ul li a:hover {
+    color: #c81623;
+}
+
+.shopcar {
+    /* display: block; */
+    position: absolute;
+    top: 25px;
+    right: 65px;
+    width: 138px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #dedede;
+    background-color: #f7f7f7;
+}
+
+.shopcar::before {
+    font-family: 'icomoon';
+    content: '\e93a';
+    color: #c81623;
+}
+
+.shopcar::after {
+    font-family: 'icomoon';
+    content: '\e920';
+    margin-left: 5px;
+
+}
+
+.count {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 7px 7px 7px 0;
+    top: -4px;
+    left: 105px;
+    background-color: #c81623;
+}
+
+.nav {
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 2px solid #c81623;
+}
+
+.left_nav {
+    width: 210px;
+    height: 45px;
+    background-color: #b11a1a;
+}
+
+.left_nav .dt {
+    border: 2px solid #b11a1a;
+    width: 210px;
+    height: 45px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.left_nav .dd {
+    /* display: none; */
+    position: relative;
+    width: 210px;
+    height: 465px;
+    font-size: 14px;
+    background-color: #c81822;
+    color: #fff;
+    z-index: 1;
+}
+
+.left_nav .dd ul {
+    position: relative;
+}
+
+.left_nav .dd ul li {
+    padding-left: 8px;
+    margin-left: 2px;
+    line-height: 31px;
+
+}
+
+.left_nav .dd ul li::after {
+    font-family: 'icomoon';
+    content: '\e920';
+    position: absolute;
+    /* top: 5px; */
+    right: 5px;
+    color: #fff;
+}
+
+.left_nav .dd ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.left_nav .dd ul li:hover {
+    background-color: #fff;
+}
+
+.left_nav .dd ul li:hover a {
+    color: #c81822;
+}
+
+.right_nav ul {
+    margin-left: 15px;
+}
+
+.right_nav ul li {
+    float: left;
+    padding: 0 25px;
+}
+
+.right_nav ul li a {
+    font-size: 16px;
+    color: #333;
+}
+
+.current {
+    background-color: red;
+}
+
+.current a {
+    color: #fff !important;
+}
+
+.hotcrazy {
+    position: relative;
+}
+
+.goTop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: pink;
+    bottom: 30%;
+    left: 50%;
+    margin-left: 610px;
+    border-radius: 5px;
+
+}
+
+.goTop a {
+    color: #fff;
+}
+
+.footer {
+    height: 417px;
+    margin-top: 37px;
+    background-color: #f5f5f5;
+}
+
+.copyright {
+    padding-top: 30px;
+    height: 109px;
+    border-bottom: 1px solid #ececec;
+}
+
+.copyright ul {
+    margin-left: 38px;
+}
+
+.copyright ul li {
+    float: left;
+    width: 200px;
+    margin-right: 30px;
+}
+
+.copyright ul li a {
+    display: block;
+    float: left;
+    width: 58px;
+    height: 53px;
+}
+
+.copyright ul li:nth-child(1) a {
+    background: url(../images/icons.png) no-repeat -250px 0;
+}
+
+.copyright ul li:nth-child(2) a {
+    background: url(../images/icons.png) no-repeat -250px -52px
+}
+
+.copyright ul li:nth-child(3) a {
+    background: url(../images/icons.png) no-repeat -250px -104px
+}
+
+.copyright ul li:nth-child(4) a {
+    background: url(../images/icons.png) no-repeat -250px -156px
+}
+
+.copyright ul li:nth-child(5) a {
+    background: url(../images/icons.png) no-repeat -250px -208px
+}
+
+.copyright ul li p {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.about {
+    height: 187px;
+    padding-left: 53px;
+    padding-top: 22px;
+    border-bottom: 1px solid #ececec;
+}
+
+.about dl {
+    float: left;
+    width: 200px;
+}
+
+.about dl dt {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #333;
+}
+
+.about dl dd a {
+    line-height: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+.about dl dd a:hover {
+    color: #c81623;
+}
+
+.about dl:last-child {
+    width: 90px;
+    text-align: center;
+}
+
+.link {
+    text-align: center;
+}
+
+.link ul {
+    margin-left: 116px;
+}
+
+.link ul li {
+    float: left;
+}
+
+.link ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #969696;
+    margin: 3px 15px 0;
+}
+
+.dd ul li:nth-child(1) {
+    position: relative;
+}
+
+.dd ul li:nth-child(1) .tv_list {
+    width: 500px;
+    height: 465px;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0;
+    right: -510px;
+    z-index: 1;
+    display: none;
+
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="less/index.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <div class="main_body">
+        <section class="container">
+
+            <header class="header">
+                <h1>告别2019，迎接2020</h1>
+                <div class="friends">
+                    <div class="ul clearfix">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <p><span>36个好友</span>在测</p>
+                    </div>
+
+                </div>
+            </header>
+            <section class="middle">
+                <div class="yuan"></div>
+                <div class="left fl">
+                    <div class="top"></div>
+                    <div class="middle">
+                        <p>2020</p>
+                        <p>你将迎接...</p>
+                    </div>
+                    <div class="bottom">
+                        <p>已有<span>XXX</span>人参与</p>
+                    </div>
+                </div>
+                <div class="right fr">
+                    <div class="top"></div>
+                    <div class="middle">
+                        <p>2019</p>
+                        <p>你会告别...</p>
+                    </div>
+                    <div class="bottom">
+                    </div>
+                </div>
+            </section>
+            <section class="footer">
+                <button class="btn">开始测试</button>
+            </section>
+        </section>
+        <section class="list">
+            <header class="list_title">
+                <a href="javascript:;">热门</a>
+                <a href="javascript:;">最新</a>
+            </header>
+            <div class="main current">
+                <div class="item clearfix">
+                    <div class="left fl"></div>
+                    <div class="right fr">
+                        <p>告别2019，</p>
+                        <p>xxx人在玩</p>
+                    </div>
+                </div>
+                <div class="item clearfix">
+                    <div class="left fl"></div>
+                    <div class="right fr">
+                        <p>告别2019，</p>
+                        <p>xxx人在玩</p>
+                    </div>
+                </div>
+                <div class="item clearfix">
+                    <div class="left fl"></div>
+                    <div class="right fr">
+                        <p>告别2019，</p>
+                        <p>xxx人在玩</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="item clearfix">
+                    <div class="left fl"></div>
+                    <div class="right fr">
+                        <p>最新玩法</p>
+                        <p>xxx人在玩</p>
+                    </div>
+                </div>
+                <div class="item clearfix">
+                    <div class="left fl"></div>
+                    <div class="right fr">
+                        <p>最新玩法</p>
+                        <p>xxx人在玩</p>
+                    </div>
+                </div>
+                <div class="item clearfix">
+                    <div class="left fl"></div>
+                    <div class="right fr">
+                        <p>最新玩法</p>
+                        <p>xxx人在玩</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="js/flexible.js"></script>
+<script>
+    var btn = document.querySelector(".btn");
+    var link = document.querySelectorAll("a");
+    var main = document.querySelectorAll(".main");
+    btn.addEventListener("click", function () {
+        window.location.href = "./display.html";
+    });
+
+    for (var i = 0; i < link.length; i++) {
+        link[i].setAttribute("index", i);
+        link[i].addEventListener("click", function () {
+            var index = this.getAttribute("index");
+            for (var k = 0; k < main.length; k++) {
+                main[k].classList.remove("current");
+            }
+            //  2. 再让对应那个图片的盒子 加上  selected；
+            main[index].classList.add("current");
+        });
+    }
+</script>
+
+</html>

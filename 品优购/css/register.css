@@ -1,0 +1,97 @@
+.header {
+    border-bottom: 2px solid #af1a1b;
+}
+
+.reg {
+    height: 522px;
+    margin-top: 20px;
+    border: 1px solid #ececec;
+}
+
+.reg_top {
+    height: 42px;
+    line-height: 42px;
+    background-color: #ececec;
+}
+
+.reg_top h3 {
+    float: left;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.reg_top .login {
+    float: right;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.login a {
+    font-size: 14px;
+    color: #c81623;
+}
+
+.reg_container {
+    position: relative;
+}
+
+.reg_form {
+    position: absolute;
+    top: 54px;
+    left: 314px;
+    text-align: center;
+}
+
+.reg_form input[name="txt"] {
+    width: 240px;
+    height: 36px;
+    border: 1px solid #999999;
+}
+
+.tel,
+.number,
+.label,
+.pwd {
+    margin: 10px auto;
+}
+
+.message {
+    margin-top: 42px;
+}
+
+.reg_form .btn {
+    width: 200px;
+    height: 34px;
+    margin-top: 50px;
+    background-color: #c81822;
+    color: #fff;
+}
+
+.reg_form label:nth-child(2) {
+    display: block;
+    float: right;
+    width: 34px;
+    height: 13px;
+    margin-top: 2px;
+    background: url(../images/easy.jpg)
+}
+
+.reg_form label:nth-child(3) {
+    display: block;
+    float: right;
+    width: 34px;
+    height: 13px;
+    margin-top: 2px;
+    background: url(../images/middle.png)
+}
+
+.reg_form label:nth-child(4) {
+    display: block;
+    float: right;
+    width: 34px;
+    height: 13px;
+    margin-top: 2px;
+    background: url(../images/strong.png)
+}

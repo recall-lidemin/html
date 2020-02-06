@@ -1,0 +1,158 @@
+.sk {
+    position: absolute;
+    top: 43px;
+    left: 201px;
+}
+
+.shu {
+    position: absolute;
+    width: 2px;
+    height: 33px;
+    top: 40px;
+    left: 186px;
+    background-color: #cf1628;
+}
+
+.list_nav {
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 2px solid #b21a1c;
+}
+
+.left_list_nav .dt {
+    float: left;
+    padding: 0 27px;
+}
+
+.left_list_nav .dt a {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+
+.right_list_nav ul li {
+    float: left;
+    padding: 0 22px;
+}
+
+.right_list_nav ul li a {
+    font-size: 14px;
+    color: #666;
+}
+
+.right_list_nav ul li a:hover {
+    color: #b1191a;
+}
+
+.right_list_nav ul li:last-child a::after {
+    font-family: 'icomoon';
+    content: '\e91e';
+}
+
+.banner_pic {
+    height: 120px;
+    background: url(../images/正在抢购.png) no-repeat;
+}
+
+.list {
+    width: 1220px;
+    margin: 28px auto;
+}
+
+.goods_list {
+    float: left;
+    position: relative;
+    width: 290px;
+    height: 460px;
+    margin-right: 15px;
+    margin-top: 10px;
+    transition: all .3s;
+}
+
+.goods_list:hover {
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .1);
+}
+
+.goods_list a {
+    display: block;
+    width: 283px;
+    height: 410px;
+}
+
+.goods_list h4 {
+    position: absolute;
+    left: 12px;
+    top: 297px;
+    width: 271px;
+}
+
+.goods_list .list_goodsprice {
+    position: absolute;
+    left: 12px;
+    top: 348px;
+    width: 271px;
+    font-size: 22px;
+    color: #e60012;
+}
+
+.goods_list .jindutiao {
+    position: absolute;
+    left: 12px;
+    top: 382px;
+    width: 271px;
+}
+
+.goods_list .jindutiao div {
+    float: left;
+    font-size: 14px;
+    color: #666;
+}
+
+.goods_list .jindutiao .jdt {
+    width: 132px;
+    height: 13px;
+    margin-top: 5px;
+    border-radius: 7px;
+    border: 1px solid #ec2b2f;
+    background-color: #fff;
+}
+
+.goods_list .jindutiao .jdt_bar {
+    width: 75%;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #ec2b2f;
+}
+
+.btn_liji button {
+    position: absolute;
+    top: 410px;
+    width: 290px;
+    height: 50px;
+    background-color: #b11a1a;
+    font-size: 20px;
+    color: #fff;
+}
+
+.fanhui {
+    position: sticky;
+    bottom: 20%;
+    left: 100%;
+    width: 57px;
+    height: 96px;
+
+}
+
+.fh {
+    width: 57px;
+    height: 48px;
+    background-color: #b1191a;
+    background: url(../images/icons.png) no-repeat -310px -53px;
+}
+
+.sc {
+    width: 57px;
+    height: 48px;
+    background-color: #b1191a;
+    background: url(../images/icons.png) no-repeat -310px -5px;
+}
