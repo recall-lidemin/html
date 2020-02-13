@@ -1,0 +1,288 @@
+.w {
+  width: 1000px;
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.main_body {
+  height: 103px;
+  padding-top: 10px;
+}
+.main_body .header .logo {
+  height: 103px;
+  line-height: 103px;
+}
+.main_body .header .txt {
+  margin-left: 20px;
+  padding-top: 26px;
+}
+.main_body .header .txt h2 {
+  font-size: 28px;
+  color: #968b5e;
+}
+.main_body .header .txt p {
+  font-size: 12px;
+  color: #968b5e;
+  text-align: center;
+}
+.main_body .header .right {
+  padding-top: 5px;
+}
+.main_body .header .right .top {
+  margin-bottom: 24px;
+}
+.main_body .header .right .top a {
+  color: #2c2c2c;
+  font-size: 16px !important;
+}
+.main_body .header .right .bottom {
+  font-size: 16px;
+  color: #333030;
+}
+.main_body .header .right .bottom span {
+  font-size: 18px;
+  color: red;
+}
+.main_body .nav {
+  height: 37px;
+  line-height: 37px;
+  background-image: linear-gradient(to bottom, #016e36, #0c934d);
+  margin-bottom: 10px;
+}
+.main_body .nav ul {
+  display: flex;
+}
+.main_body .nav ul li {
+  border-right: 1px solid #333030;
+  width: 88px;
+  text-align: center;
+}
+.main_body .nav ul li a {
+  font-size: 14px;
+  color: #fff;
+}
+.main_body .nav ul li:last-child {
+  border-right: none;
+}
+.main_body .content {
+  display: flex;
+}
+.main_body .content .content_left {
+  width: 685px;
+}
+.main_body .content .content_left .banner {
+  width: 685px;
+  height: 218px;
+}
+.main_body .content .content_left .banner img {
+  width: 100%;
+  height: 100%;
+}
+.main_body .content .content_left .financing {
+  width: 685px;
+  margin: 10px 0;
+}
+.main_body .content .content_left .financing .table .items {
+  display: none;
+}
+.main_body .content .content_left .financing .table .act {
+  display: block;
+}
+.main_body .content .content_left .financing .title {
+  width: 683px;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #ccc;
+}
+.main_body .content .content_left .financing .title a {
+  display: block;
+  float: left;
+  width: 80px;
+  height: 38px;
+  font-size: 18px;
+  color: blue;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+.main_body .content .content_left .financing .title .current {
+  height: 39px;
+  background-color: #fff;
+}
+.main_body .content .content_left .financing .title a:last-child {
+  float: right;
+  color: red;
+  margin-right: 30px;
+  text-align: right;
+  border-right: none;
+}
+.main_body .content .content_left .financing .table_head {
+  display: flex;
+  height: 39px;
+  line-height: 39px;
+  padding-left: 25px;
+  border: 1px solid #ccc;
+  border-top: none;
+  color: #417343;
+}
+.main_body .content .content_left .financing .table_head .item {
+  padding: 0 10px;
+}
+.main_body .content .content_left .financing .table_head .item:nth-child(4) {
+  margin-left: 10px;
+}
+.main_body .content .content_left .financing .table_head .item:nth-child(5) {
+  margin-left: 10px;
+}
+.main_body .content .content_left .financing .table_head .item:nth-child(6) {
+  margin-left: 35px;
+}
+.main_body .content .content_left .financing .table_head .item:nth-child(7) {
+  margin-left: 40px;
+}
+.main_body .content .content_left .financing .table_head .l {
+  margin-left: 10px !important;
+}
+.main_body .content .content_left .financing .table_head .m {
+  margin: 0 !important;
+}
+.main_body .content .content_left .financing .table_head .n {
+  margin-left: 50px !important;
+}
+.main_body .content .content_left .financing .table_body {
+  padding-left: 44px;
+  padding-right: 72px;
+  border: 1px solid #ccc;
+  border-top: none;
+  padding-top: 10px;
+}
+.main_body .content .content_left .financing .table_body .item {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.main_body .content .content_left .financing .table_body .item:first-child {
+  margin: 0;
+}
+.main_body .content .content_left .financing .fang {
+  padding-right: 20px;
+}
+.main_body .content .content_right {
+  width: 310px;
+  margin-left: 10px;
+}
+.main_body .content .content_right .color {
+  color: #968b5e;
+}
+.main_body .content .content_right .red {
+  color: red;
+}
+.main_body .content .content_right .news .title {
+  height: 33px;
+  line-height: 33px;
+  border: 1px solid #ccc;
+  padding-right: 20px;
+  background-color: #f2f0f0;
+}
+.main_body .content .content_right .news .con {
+  height: 145px;
+  border: 1px solid #ccc;
+  border-top: none;
+  padding-left: 40px;
+  background-color: #f2f0f0;
+}
+.main_body .content .content_right .news .con ul {
+  padding: 5px 0;
+}
+.main_body .content .content_right .news .con ul li {
+  margin: 5px 0;
+  list-style-type: disc;
+}
+.main_body .content .content_right .news .con ul li:first-child {
+  margin: 0;
+}
+.main_body .content .content_right .company {
+  margin-top: 10px;
+}
+.main_body .content .content_right .company .title {
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ccc;
+  padding-right: 20px;
+}
+.main_body .content .content_right .company .con {
+  border: 1px solid #ccc;
+  border-top: none;
+  padding: 6px;
+  line-height: 24px;
+}
+.main_body .content .content_right .tou {
+  margin-top: 10px;
+}
+.main_body .content .content_right .tou .title {
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #ccc;
+  padding-right: 20px;
+}
+.main_body .content .content_right .tou .con {
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.main_body .content .content_right .tou .con ul {
+  padding: 3px 0 3px 32px;
+}
+.main_body .content .content_right .tou .con ul li {
+  margin: 2px 0;
+  list-style-type: disc;
+}
+.main_body .elegant {
+  margin-top: 10px;
+}
+.main_body .elegant .title {
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #ccc;
+}
+.main_body .elegant .title a {
+  float: right;
+  margin-right: 30px;
+  color: red;
+  font-size: 16px;
+}
+.main_body .elegant .con {
+  height: 216px;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main_body .elegant .con .item p {
+  margin-top: 10px;
+  text-align: center;
+}
+.main_body .footer {
+  margin-top: 25px;
+}
+.main_body .footer .link {
+  height: 45px;
+  line-height: 45px;
+  background-color: #057c3f;
+  color: #fff;
+  text-align: center;
+}
+.main_body .footer .link span {
+  margin: 0 10px;
+}
+.main_body .footer .link a {
+  color: #fff;
+}
+.main_body .footer .copyright {
+  height: 150px;
+  text-align: center;
+  margin-top: 20px;
+}
