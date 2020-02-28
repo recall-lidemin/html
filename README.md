@@ -1,2 +1,19 @@
-# static_demo
-##静态页面练习整理
+## html_demo
+### Project setup
+
+```
+yarn
+```
+
+### Run
+
+```
+node app.js
+```
+
+### 访问
+
+```
+127.0.0.1:3000
+```
+
